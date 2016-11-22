@@ -1,0 +1,51 @@
+<style>
+.row {
+	border: solid 3px red;
+	height: 500px;
+	display: flex;
+}
+.c {
+	min-height: 100px;
+	background: red;
+	width: 33.333%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.c.a {
+	background: green;
+}
+.c.a:after {
+	content: "";
+	width: 7px;
+	height: 150px;
+	position: absolute;
+	display: block;
+	background: black;
+	right: 0;
+	top: 50%;
+	margin-top: -75px;
+}
+.c.a:before {
+	content: "";
+	width: 10px;
+	height: 150px;
+	position: absolute;
+	display: block;
+	background: black;
+	left: -5px;
+	top: 50%;
+	margin-top: -75px;
+}
+.b {
+	border: solid 1px green;
+}
+</style>
+<div class="row">
+	<div class="c">
+		<div class="b">tte</div>
+	</div>
+	<div class="c a"></div>
+	<div class="c"></div>
+</div>
